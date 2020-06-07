@@ -17,7 +17,7 @@ app = Flask(__name__)
 Swagger(app)
 
 # Load the pickle file, get the classifier
-pickle_in = open('classifier.pkl','rb')
+pickle_in = open('model/classifier.pkl','rb')
 classifier = pickle.load(pickle_in)
 
 @app.route('/')
