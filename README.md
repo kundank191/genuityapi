@@ -28,16 +28,16 @@ I am not a front end developer, I am just a python developer, hence the UI is ju
 #### Usage for a single case
 Click on the Get button. Then click on Test it out, then fill the parameters and then press execute.
 
-<img src="https://user-images.githubusercontent.com/26672993/84121963-6617cf80-aa55-11ea-92d0-51349bcf80e1.png" width="750" height="500"/>
+<img src="https://user-images.githubusercontent.com/26672993/84123980-33bba180-aa58-11ea-8099-2293d35721b9.png" width="750" height="500"/>
 
 This is the result page, you can see the result in the response body.
 
-<img src="https://user-images.githubusercontent.com/26672993/84122160-a24b3000-aa55-11ea-8aec-66630331cfdb.png" width="750" height="500"/>
+<img src="https://user-images.githubusercontent.com/26672993/84124068-56e65100-aa58-11ea-8953-3c75015f5b78.png" width="750" height="500"/>
 
 #### Usage for a file with multiple cases
-Click on the Post button, and select a file.
+Click on Try it out then, click on the Post button, and select a file.
 
-<img src="https://user-images.githubusercontent.com/26672993/84122274-d161a180-aa55-11ea-8a6f-d7a03d79b466.png" width="750" height="500"/>
+<img src="https://user-images.githubusercontent.com/26672993/84124235-9319b180-aa58-11ea-9591-0da6bffc77d6.png" width="750" height="500"/>
 
 - The File should have this format.
 
@@ -45,7 +45,7 @@ Click on the Post button, and select a file.
 
 This is the result page, you cans see the result in the response body.
 
-<img src="https://user-images.githubusercontent.com/26672993/84122327-e76f6200-aa55-11ea-83a2-125cbcb67a04.png" width="750" height="500"/>
+<img src="https://user-images.githubusercontent.com/26672993/84124320-b04e8000-aa58-11ea-8f97-1546737ab2b2.png" width="750" height="500"/>
 
 
 ## Heroku limits
