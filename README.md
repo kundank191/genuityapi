@@ -1,5 +1,6 @@
 # GenuityApi
-Machine learning model which detects fraud Banknote. link to dataset : https://www.kaggle.com/ritesaluja/bank-note-authentication-uci-data
+Machine learning model which detects fraud Banknote. link to dataset : https://www.kaggle.com/ritesaluja/bank-note-authentication-uci-data.
+
 I created a machine learning model in jupyter notebook. Which was pickled and stored.
 * The pickled model is being used by my app to predict model.
 * flask is used to create the backend.
@@ -29,6 +30,8 @@ Click on the Get button. Then click on Test it out, then fill the parameters and
 
 <img src="https://user-images.githubusercontent.com/26672993/84121963-6617cf80-aa55-11ea-92d0-51349bcf80e1.png" width="750" height="500"/>
 
+This is the result page, you can see the result in the response body.
+
 <img src="https://user-images.githubusercontent.com/26672993/84122160-a24b3000-aa55-11ea-8aec-66630331cfdb.png" width="750" height="500"/>
 
 #### Usage for a file with multiple cases
@@ -39,6 +42,8 @@ Click on the Post button, and select a file.
 - The File should have this format.
 
 <img src="https://user-images.githubusercontent.com/26672993/84122459-1554a680-aa56-11ea-97a1-cec8a2addec5.png" width="300" height="300"/>
+
+This is the result page, you cans see the result in the response body.
 
 <img src="https://user-images.githubusercontent.com/26672993/84122327-e76f6200-aa55-11ea-83a2-125cbcb67a04.png" width="750" height="500"/>
 
