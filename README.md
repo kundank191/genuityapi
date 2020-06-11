@@ -23,3 +23,9 @@ Class is the target variable and the rest four are our parameters.
 
 <img src="https://user-images.githubusercontent.com/26672993/84376831-4f14e100-abff-11ea-9b50-e3f5c90a71ee.gif" width="820" height="400" />
 
+## In case of a file
+
+- The File should have this format.
+
+<img src="https://user-images.githubusercontent.com/26672993/84122459-1554a680-aa56-11ea-97a1-cec8a2addec5.png" width="300" height="300"/>
+
