@@ -1,8 +1,5 @@
 Flask
 gunicorn
 Werkzeug
-numpy
-scipy
-scikit-learn
 pandas
-flasgger
+sklearn

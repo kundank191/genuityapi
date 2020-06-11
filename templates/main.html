@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <style>
+        .vl {
+            border-left: 1px solid grey;
+            height: 550px;
+            opacity: 0.1;
+        }
+    </style>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Genuity App</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="mx-auto order-0">
+            <a class="navbar-brand mx-auto" href="#">Check if Banknote is Genuine</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <p class="text-center px-5 pt-2">This machine learning model will detect wheter a bank note is genuine or not based
+        on the <a href="https://github.com/kundank191/genuityapi#data-on-which-the-model-is-based-on"
+            target="_blank">parameters</a>. Insert parameter of a bank note or upload a csv file to check genuity.
+    </p>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="container p-5">
+                    <h4>Check an individual note</h4>
+                    <form aria-label="Check for Infividual note" action=" {{ url_for('predict')}} " method="POST">
+                        <div class="form-group">
+                            <label for="variance">Insert Variance</label>
+                            <input name = "variance" type="number" step="any" class="form-control" id="variance" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="skweness">Insert Skewness</label>
+                            <input name = "skewness" type="number" step="any"  class="form-control" id="skewness" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="curtosis">Insert Curtosis</label>
+                            <input name = "curtosis" type="number" step="any"  class="form-control" id="curtosis" required="true">
+                        </div>
+                        <div class="form-group">
+                            <label for="entropy">Insert Entropy</label>
+                            <input name = "entropy" type="number" step="any"  class="form-control" id="entropy" required="true">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="vl my-4"></div>
+            <div class="col-sm">
+                <div class="container p-5">
+                    <h4>Check a file</h4>
+                    <form method="POST" action="/predict_file" enctype=multipart/form-data >
+                        <div class="form-group">
+                            <label for="file">Input a file</label>
+                            <input name = "file" type="file" class="form-control-file" id="file" required="true">
+                        </div>
+                        <button type="submit" class="btn btn-primary">Submit File</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
